@@ -237,23 +237,23 @@ span {
 @keyframes words {
     0%,
     20%{
-        content: "Frontend Designer";
+        content: "Full-Stack Engineer";
     }
     21%,
     40%{
-        content: "Web Designer";
+        content: "Web Developer";
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "Product Engineer";
     }
     61%,
     80%{
-        content: "Web Developer";
+        content: "Mathematical Physicist";
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Founder.";
     }
 }
 @keyframes typing {
@@ -394,7 +394,7 @@ span {
 }
 .service-box {
     background-color: var(--main-color);
-    height: 300px;
+    height: 600px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -418,7 +418,7 @@ span {
 .service-info h4{
     font-size: 3rem;
     font-weight: 800;
-    line-height: 2;
+    line-height: 1.5;
 }
 .service-info p {
     font-size: 1.6rem;
