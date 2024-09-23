@@ -9,10 +9,10 @@
     font-family: "Poppins", sans-serif;
 }
 :root {
-    --bg-color: #080808;
+    --bg-color: #24b7f8;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #00ffee;
+    --main-color: darkblue;
 }
 
 html {
@@ -97,6 +97,7 @@ section {
     text-align: left;
     justify-content: center;
     margin-top: 3rem;
+    width: 50%;
 }
 
 span {
@@ -119,14 +120,24 @@ span {
     margin-top: 1.5rem;
     line-height: 1;
 }
-.home-img img{
-    position: relative;
-    top: 3rem;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
+
+.home-img {
+    display: flex;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.home-img img {
+    width: 40vw; /* Make the image take up the full width of the .home-img div */
+    height: 100%; /* Maintain aspect ratio */
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    border-radius: 50%;
 }
 
 .home-img img:hover {
@@ -172,28 +183,30 @@ span {
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: black;
+    color: white;
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    transform: scale(1.5);
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.6);
     box-shadow: 0 0 50px var(--main-color),;
 }
 
 .btn-group {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    margin-top: 4rem;
+    gap: 8rem;
 }
 
 .btn-group a:nth-of-type(2) {
     background-color: black;
-    color: var(--main-color);
+    color: white;
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
 }
@@ -237,23 +250,23 @@ span {
 @keyframes words {
     0%,
     20%{
-        content: "Full-Stack Engineer";
+        content: "Events!";
     }
     21%,
     40%{
-        content: "Web Developer";
+        content: "Weddings!";
     }
     41%,
     60%{
-        content: "Product Engineer";
+        content: "School Fetes!";
     }
     61%,
     80%{
-        content: "Mathematical Physicist";
+        content: "Sports Events!";
     }
     81%,
     100%{
-        content: "Founder.";
+        content: "Work Breaks";
     }
 }
 @keyframes typing {
@@ -379,7 +392,7 @@ span {
     width: 50px;
 }
 .services {
-    background: var(--bg-color);
+    background: white;
     color: black;
 }
 .services h2 {
@@ -391,14 +404,17 @@ span {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
+    margin: 0;
 }
 .service-box {
     background-color: var(--main-color);
-    height: 600px;
+    aspect-ratio: 1/1;
+
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    overflow: hidden;
 }
 .service-box:hover {
     background: white;
@@ -413,7 +429,8 @@ span {
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 0rem 0rem;
+    margin: 0rem;
 }
 .service-info h4{
     font-size: 3rem;
@@ -425,10 +442,22 @@ span {
     font-weight: 600;
     max-height: 100px;
     line-height: 1.7;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
+
+.service-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+    margin: 0;
+    padding: 0;
+
+}
+
 .testimonials {
-    background: var(--second-bg-color);
+    background: #24b7f8;
 }
 .testimonials-box{
     background-size: cover;
@@ -436,9 +465,11 @@ span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 0;
 }
 .testimonials .heading{
     margin-bottom: 5rem;
+    margin-top: 0;
 }
 .testimonials-box img{
     width: 15rem;
@@ -486,6 +517,7 @@ span {
 }
 .contact {
     background: var(--bg-color);
+    border-top: #131313 5px solid;
 }
 .contact h2 {
     margin-bottom: 3rem;
@@ -510,7 +542,7 @@ span {
     padding: 2.5rem;
     font-size: 1.8rem;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: whitesmoke;
     border-radius: 2rem;
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
@@ -519,6 +551,7 @@ span {
 .contact form .btn {
     margin-top: 2rem;
 }
+
 .footer {
     position: relative;
     bottom: 0;
@@ -585,6 +618,16 @@ span {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
+    .btn-group {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 8rem;
+    }
+    .btn {
+        scale: 1;
+        margin: 3rem;
+    }
 }
 @media(max-width:991px) {
     header {
@@ -618,6 +661,18 @@ span {
     .footer {
         padding: 2rem 3%;
     }
+    .btn-group {
+        margin-top: 4rem;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 8rem;
+    }
+    .btn {
+        margin: 3rem 3.5rem;
+        scale: 1;
+    }
 }
 @media(max-width:895px) {
     #menu-icon {
@@ -648,6 +703,10 @@ span {
     .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 10rem;
+        padding-bottom: 0;
     }
     .home-content h3{
         font-size: 2.6rem;
@@ -661,8 +720,23 @@ span {
         margin: 0 auto;
     }
     .home-img img {
-        width: 56vw;
+        width: 100vw;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
     }
+    .btn-group {
+        margin-top: 4rem;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 8rem;
+    }
+    .btn {
+        margin: 3rem 4rem;
+    }
+
     .services h2 {
         margin-bottom: 3rem;
     }
