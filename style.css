@@ -96,7 +96,7 @@ section {
     align-items: baseline;
     text-align: left;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 10rem;
     width: 50%;
 }
 
@@ -147,7 +147,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
@@ -200,7 +200,7 @@ span {
 .btn-group {
     display: flex;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 0rem;
     gap: 8rem;
 }
 
@@ -250,23 +250,23 @@ span {
 @keyframes words {
     0%,
     20%{
-        content: "Events!";
+        content: "Sports Events!";
     }
     21%,
     40%{
-        content: "Weddings!";
+        content: "Corporate Events!";
     }
     41%,
     60%{
-        content: "School Fetes!";
+        content: "Weddings!";
     }
     61%,
     80%{
-        content: "Sports Events!";
+        content: "Village Fetes!";
     }
     81%,
     100%{
-        content: "Work Breaks";
+        content: "Corporate Events!";
     }
 }
 @keyframes typing {
